@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jovana</title>
+    <link rel="stylesheet" type="text/css" href="my_portfolio.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#github">Github</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Video -->
+    <div id="home" class="home">
+        <video autoplay muted loop id="tech_video" src="./videos/video.mp4" type="video/mp4"></video>
+    </div>
+
+    <!-- Video Text -->
+    <div class="video-text">
+        <h1>Hi, I am Jovana.</h1>
+        <p>
+                Welcome to my portfolio website.
+                <br>
+                <br>
+                <q>In some ways, programming is like painting. You start with a blank canvas and certain basic raw materials. You use a combination of science, art, and craft to determine what to do with them.</q>
+                <br>-Andrew Hunt<br>
+        </p>
+    </div>
+
+    <!-- About -->
+	<div class="row" id="about"> 
+		<div class="column-2"> <!-- left column -->
+			<img src="./img/code.jpg" alt="Laptop">
+		</div>
+  
+		<div class="column-1"> <!-- right column -->
+			<h1>About</h2>
+				<p>I am a software developer in training! I am a student of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML and CSS.<br><br>You can <a href="#contact">contact</a> me below!</p>
+		</div>
+	</div>
+
+    <!-- Github Section -->
+    <div class="row" id="github">
+        <div class="column-1"> <!--left column-->
+             <h1>Github</h1>
+             <p>You can view my coding projects on my Github profile here:<br>
+              <a href="https://github.com/Jo1910" target="_blank">Jovana's Github</a> 
+            </p>
+        </div>
+        <div class="column-2"> <!-- right column -->
+             <a href="https://github.com/Jo1910" target="_blank"><img src="./img/github-icon.png" alt="github icon"></a>
+        </div>
+    </div>
+
+    <!-- Contact -->
+	<div class="row" id="contact"> 
+		<div class="column-3"> <!-- Contact image, left column -->
+			<img src="./img/contact.jpg" alt="phone">
+		</div>
+	
+		<div class="column-1"> <!-- Contact form, right column -->
+			<h2>Contact</h2> 
+				<form action="" method="get">
+					<label>Name:</label>
+						<input type="text" placeholder="Please enter your name here">
+					<label>Email:</label>
+						<input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+					<label>Message:</label>
+						<input type="text" id="Message" name="Message" placeholder="Please write your message here">
+						<input type="submit" value="Submit">
+				</form>
+		</div>
+    </div>
+    
+    <!-- Footer -->
+	<footer>
+		<p>
+			<div>&copy 2020 &nbsp;|&nbsp; Jovana Mitic</div><br>
+		</p>
+	</footer>
+    
+</body>
+</html>

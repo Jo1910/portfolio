@@ -1,0 +1,219 @@
+body {
+    margin: 0%;
+}
+
+/* NAVBAR */
+
+.navbar {
+    position: fixed;
+    overflow: hidden;
+    background-color: #320638;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    animation-name: navbar;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #c1bcc2;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-family: Noto, Gill Sans;
+    font-size: 18px;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #efcef2;
+    color: indigo;
+    font-weight: bolder;
+    transform: scale(1.2);
+    transition: transform 1.5s;
+}
+
+/* Navbar keyframes */
+@keyframes navbar {
+    0% {left: -2000px;}
+    100% {left: 0}
+}
+
+#tech_video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    z-index: -1;
+}
+
+.video-text {
+    background: rgba(0,0,0,0.5);
+    color: #f7edf7;
+    width: 100%;
+    height: 500px;
+    padding: 25px;
+    margin-top: 25px;
+    opacity: 0;
+    animation: visible 3s ease-out 3s forwards;
+}
+
+@keyframes visible {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.column-1 {
+    float: left;
+    width: 50%;
+    height: 420px;
+    padding: 15px;
+    padding-top: 3%;
+    background-color: ivory;   
+}
+
+.column-2 {
+    float:left;
+    width: 50%;
+    height: 420px;
+    padding: 10px;
+    padding-top: 2%;
+    background-color: #2a102e;
+}
+
+.column-3 {
+    float:left;
+    width: 50%;
+    height: 420px;
+    padding: 10px;
+    padding-top: 2%;
+    background-color: #2a102e;
+}
+
+.row:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+h1 {
+    font-family: Lucida Bright, Book Antiqua;
+    text-align: center;
+    margin-top: 4%;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px black;
+}
+
+h2 {
+    font-family: Lucida Bright, Book Antiqua;
+    text-align: center;
+    margin-top: 1.5%;
+    letter-spacing: 1px;
+}
+
+p {
+    font-family: Lucida Bright, Book Antiqua;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+a {
+    color: #07057d;
+    text-decoration: none;
+    font-style: italic;
+}
+
+q {
+    font-style: italic;
+    font-size: 17px;
+    margin-bottom: 15px;
+    line-height: 1.5px;
+}
+
+
+/* IMAGE STYLING*/
+img {
+    opacity: 0.5;
+    border-radius: 8px; 
+    max-width: 100%; 
+    height: 340px; 
+	margin-left: auto; 
+    margin-right: auto;
+	display: block;	
+}
+
+img:hover {
+    opacity: 0.8;
+    transition: transform 2s;
+    transform: scale(1.1);
+    animation-name: background;
+    animation-duration: 2s;
+}
+
+@keyframes background {
+    0% {opacity: 0.5;}
+    100% {opacity: 0.8;}
+}
+
+/* FORM */
+form {
+    background: #f7edf7;
+    border-radius: 3px;
+    padding: 15px;
+}
+
+label {
+    font-style: italic;
+}
+
+/* INPUT STYLING */
+input[type=text] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #5e4d5e;
+    border-radius: 2px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    resize: vertical;
+    font-family: Noto, Gill Sans;
+}
+
+input[type=text]:focus {
+    background: #e8dfe8;
+}
+
+input[type=submit] {
+    background-color: darkslateblue;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px 12px;
+    border-radius: 4px;
+    letter-spacing: 1.5px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    color: darkslateblue;
+}
+
+
+/* FOOTER */
+footer {
+    padding: 1%;
+    color: wheat;
+    text-align: center;
+}
